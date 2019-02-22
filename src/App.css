@@ -31,3 +31,60 @@
     transform: rotate(360deg);
   }
 }
+
+.books-container .books .bookcard {
+  
+  margin:20px;
+  width: 350px;
+  position: relative;
+  float: left;
+  
+}
+
+.books-container .books .bookcard .books-img{
+  width: 350px;
+  height:200px;
+}
+
+.card-stacked {
+  max-height: 500px;
+  display: inline-block;
+}
+
+.card .card-content {
+  padding: 15px 25px !important;
+}
+.card-action {
+padding: 5px 25px !important;
+}
+
+.cartCard {
+  max-width: 800px;
+}
+
+.pricetag {
+  position: relative;
+  float: left;
+}
+
+.titletag {
+  position: relative;
+  float: left;
+}
+
+.infocard {
+  width: 200px;
+  height: 200px;
+}
+
+.github {
+  width: 24px;
+  height: 24px;
+}
+
+.techlogos {
+  width: 150px;
+  height: 150px;
+}
+
+
