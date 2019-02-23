@@ -6,6 +6,7 @@ import Home from './Components/Home'
 import Contact from './Components/Contact'
 import Cart from './Components/Cart'
 import AboutUs from './Components/AboutUs'
+import AddBooks from './Components/AddBooks'
 import {BrowserRouter, Route} from 'react-router-dom'
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path = '/cart' component = {Cart}/>
           <Route path = '/contact' component = {Contact}/>
           <Route path = '/about' component = {AboutUs}/>
+          <Route path = '/addbook' component = {AddBooks}/>
       </div>
       </BrowserRouter>
     );

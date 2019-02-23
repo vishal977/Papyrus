@@ -7,18 +7,22 @@ import RemoveFromCart from '../Redux/RemoveFromCart'
 import cartempty from '../Images/cartempty.png'
 import {Redirect} from 'react-router-dom'
 import '../CSS Files/Cart.css'
+import StripeCheckout from 'react-stripe-checkout';
 
 
 class Cart extends Component {
     
     render() {
-        const {auth} = this.props;
+        const {auth} = this.props; 
         if(!auth.uid) return <Redirect to="/"/>
         const {bookslist} = this.props;
         var arr = [];
+        var total=0;
         for (var key in bookslist) {
-            if(bookslist[key].inCart === 1)
+            if(bookslist[key].inCart === 1){
             arr.push(bookslist[key]);
+            total = +total + +bookslist[key].price
+            }
         }
         const booksList = arr.length ? 
         (
@@ -57,6 +61,10 @@ class Cart extends Component {
            <h3 className="brown-text text-darken-3">Your Cart</h3>
            <p>Click on the delete button to remove books from your cart...</p>           
             {booksList}
+            </div>
+            <div className="container">
+                <h3>Total: {total}</h3>
+            <StripeCheckout ComponentClass="div" currency="INR"/>
             </div>
         </div>
     )

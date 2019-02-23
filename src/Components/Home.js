@@ -15,6 +15,11 @@ class Home extends Component {
             <div className="container brown darken-3">
                 <Books/>
             </div>
+            <div className="fixed-action-btn">
+                <a href="/addbook" className="btn-floating large red">
+                    <i className="material-icons">add</i>
+                </a>
+            </div>
             </div>
         )
     }
