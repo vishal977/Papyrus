@@ -9,7 +9,7 @@ const SignedIn = (props) => {
             <ul className="right">
                 <li>
                     <Link to="/">
-                    Home
+                    Store
                     </Link>
                 </li>
                 <li>

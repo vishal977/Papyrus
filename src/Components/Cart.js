@@ -6,6 +6,7 @@ import {compose} from 'redux';
 import RemoveFromCart from '../Redux/RemoveFromCart'
 import cartempty from '../Images/cartempty.png'
 import {Redirect} from 'react-router-dom'
+import '../CSS Files/Cart.css'
 
 
 class Cart extends Component {
@@ -50,11 +51,13 @@ class Cart extends Component {
         </div>
     )
     return (
-        <div className="container">
+        <div className="">
+            <header className="header"></header>
+            <div className="container">
            <h3 className="brown-text text-darken-3">Your Cart</h3>
            <p>Click on the delete button to remove books from your cart...</p>           
             {booksList}
-
+            </div>
         </div>
     )
     }

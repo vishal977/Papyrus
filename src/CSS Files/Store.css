@@ -1,0 +1,7 @@
+.headerStore {
+    background: url('../Images/store.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    max-height: 800px;
+  }

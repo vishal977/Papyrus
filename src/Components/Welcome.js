@@ -10,7 +10,7 @@ const Welcome = ({auth}) => {
     if(auth.uid) return <Redirect to="/home"/>
     return (
         <div className="welcome-page">
-        <header className="header">
+        <header className="headerWelcome">
         </header>
         <section className="section container" id="welcome"> 
                 <div className="row">

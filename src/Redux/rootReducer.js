@@ -5,8 +5,6 @@ import {firestoreReducer} from 'redux-firestore';
 import {firebaseReducer} from 'react-redux-firebase';
 import authenticationReducer from './authenticationReducer'
 const rootReducer = combineReducers({
-    cart: cartReducer,
-    books: booksReducer,
     firestore: firestoreReducer,
     firebase: firebaseReducer,
     authentication: authenticationReducer
